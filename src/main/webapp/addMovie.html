@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Movie</title>
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+body{
+height:100vh;
+}
+div{
+margin-left:500px;
+margin-top:150px;
+padding-left:10px;
+padding-top:20px;
+height:410px;
+width:400px;
+border:2px solid black;
+border-radius:20px;
+background-color:rgba(0,0,200,0.6);
+}
+button{
+height:40px;
+width:60px;
+border-radius:15%;
+}
+button:hover{
+color:white;
+background-color:blue;
+}
+
+label{
+font-weight:bold;
+}
+
+
+</style>
+</head>
+<body>
+<div>
+<h1>Add Movies</h1>
+<form action="addmovie"  enctype="multipart/form-data">
+<br>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name"><br><br>
+
+<label for="desc">Description:</label>
+<input type="text" id="desc" name="desc"><br><br>
+
+<label for="poster">Poster:</label>
+<input type="file" id="poster" name="poster" ><br><br>
+
+<label for="language">Language:</label>
+<select name="lang"> 
+<option>Kannada</option>
+<option>Hindi</option>
+<option>English</option>
+<option>Tamil</option>
+</select>
+<br><br>
+
+<label for="Genre">Genre:</label>
+<input type="checkbox" name="genre" value="comedy" >comedy
+<input type="checkbox" name="genre" value="tragedy">tragedy
+<input type="checkbox" name="genre" value="horror">Horror
+<input type="checkbox" name="genre" value="romantic">Romantic
+<input type="checkbox" name="genre" value="scifi">Scientific<br><br>
+
+
+<label for="rateing">Rating:</label>
+<input type="number" id="rateing" name="rateing"><br><br>
+
+<button >Add</button>
+
+</form>
+</div>
+</body>
+</html>
